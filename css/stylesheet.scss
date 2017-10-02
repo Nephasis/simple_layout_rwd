@@ -1,0 +1,33 @@
+@import 'config/config';
+
+@import 'sections/base_rules';
+
+@import 'sections/reusable_classes';
+
+@media all and (min-width: 816px) {
+
+  @import 'sections/menu';
+
+}
+
+@media all and (max-width: 815px) {
+
+  @import 'sections/mobile-menu';
+
+}
+
+@import 'sections/logo';
+
+@import 'sections/boxes';
+
+@import 'sections/summary';
+
+@import 'sections/posts';
+
+@import 'sections/images-panel';
+
+@import 'sections/fancy-list';
+
+@import 'sections/silver-footer';
+
+@import 'sections/dark-footer';

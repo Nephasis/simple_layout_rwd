@@ -1,0 +1,47 @@
+@import 'mixins/border-radius';
+
+.boxes-holder {
+  padding: 3em 0 3em 10px;
+  width: 99%;
+  border-bottom: $clr-border;
+  .box {
+    position: relative;
+    width: 28%;
+    padding-right: 3em;
+
+    @media all and (max-width: 915px) {
+      padding-right: 4%;
+    }
+
+    @media all and (max-width: 805px) {
+      width: 95%;
+      padding: 0 0 2em 0;
+    }
+
+    header {
+      letter-spacing: -0.05em;
+
+      @media all and (max-width: 805px) {
+        padding-bottom: 1em;
+      }
+    }
+  }
+
+  .dot {
+    height: 2em;
+    width: 2em;
+    margin-right: 1em;
+    background-color: $font-clr-dark;
+    border: 1px solid $font-clr-dark;
+    @include border-radius(100%);
+    vertical-align: -0.7em;
+  }
+
+  header {
+    padding-bottom: 2em;
+  }
+
+  article {
+    line-height: 1.5em;
+  }
+}

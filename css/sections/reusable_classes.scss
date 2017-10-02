@@ -1,0 +1,62 @@
+@import 'mixins/gradient';
+@import 'mixins/border-radius';
+
+.inline {
+  display: inline-block;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.scale {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.big {
+  margin: auto auto 1em auto;
+  font-size: 28px;
+  color: $font-clr-dark;
+}
+
+.small {
+  font-size: 16px;
+  color: $font-clr-dark;
+}
+
+.center-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.theme-clr {
+  color: $theme-clr;
+  cursor: pointer;
+}
+
+.button-theme-clr {
+  margin-right: 2.5em;
+  padding: 0 1.5em 0 1.5em;
+  height: 43px;
+  line-height: 43px;
+  font-size: 14px;
+  font-weight: bold;
+  color: $button-font-clr;
+  text-shadow: 0.5px 1px 1px white;
+  text-align: center;
+  @include border-radius(3px);
+  @include gradient($theme-gradient1, $theme-gradient1-clrstop);
+  cursor: pointer;
+
+  &:hover {
+    @include gradient($theme-gradient2, $theme-gradient2-clrstop);
+  }
+}

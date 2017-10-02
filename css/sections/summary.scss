@@ -1,0 +1,19 @@
+.summary {
+  background-color: #f8f8f8;
+  border-bottom: $clr-border;
+
+  @media all and (max-width: 1000px) {
+      padding: 0 1%;
+    }
+
+  .heading {
+    margin-bottom: 7px;
+    padding: 3em 0;
+    border-bottom: $clr-border;
+  }
+
+  .browsers {
+    padding-top: 3em;
+    border-top: $clr-border;
+  }
+}

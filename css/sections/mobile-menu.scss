@@ -1,0 +1,79 @@
+.menu{
+  margin: 1.5em;
+  max-width: 840px;
+
+  .mobile-menu {
+    display: block;
+    position: relative;
+    margin-top: 1.45em;
+    padding: 0.6em 0.5em 0.6em 1em;
+    max-width: 100%;
+    border: 1px solid #D1D1D1;
+    background-image:url('../img/mobile_menu_icon.png');
+    background-repeat:no-repeat;
+    background-position:right;
+    font-size: 0.8em;
+
+    a {
+      display: block;
+      position: relative;
+      text-decoration: none;
+      width: 100%;
+      color: rgb(51, 51, 51);
+      text-align: left;
+    }
+  }
+
+  .menu-avada {
+    margin: 1.25em auto 0 auto;
+    width: 100px;
+  }
+
+  .menu-list {
+    display: none;
+    margin: 0 2px 0 0;
+    padding: 0;
+
+    .first {
+      border-top: 0px; //do I need important here?
+    }
+
+    a {
+      display: inline-block;
+      margin: 0.6em 0 0.6em 0;
+      text-decoration: none;
+      width: 90%;
+      color: rgb(51, 51, 51);
+      font-size: 0.8em;
+    }
+  }
+}
+
+.prim-menu {
+  margin: 0;
+  width: 100%;
+  border-top: $clr-border;
+  border-left: $clr-border;
+  border-right: $clr-border;
+
+  &:last-child {
+    border-bottom: $clr-border;
+  }
+
+  &>a {
+    padding-left: 1em;
+  }
+
+  .hidden {
+    padding: 0;
+
+    li {
+      border-top: $clr-border;
+
+      &:before {
+        content: "- ";
+        padding-left: 0.5em;
+      }
+    }
+  }
+}

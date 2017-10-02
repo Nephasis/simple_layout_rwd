@@ -1,0 +1,23 @@
+.images-panel {
+  margin: 0 auto;
+  border-top: $clr-border;
+
+  ul {
+    padding: 0 1.6%;
+
+    @media all and (max-width: 980px) {
+      width: 650px;
+      margin: 0 auto;
+    }
+
+    @media all and (max-width: 700px) {
+      width: 325px;
+      margin: 0 auto;
+    }
+  }
+
+  li {
+    display: inline-block;
+    padding: 0.2em;
+  }
+}

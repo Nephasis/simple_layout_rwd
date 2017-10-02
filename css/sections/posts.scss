@@ -1,0 +1,110 @@
+.posts {
+  margin-top: 1em;
+  padding: 0 0 2em 10px;
+  width: 99%;
+  border-bottom: $clr-border;
+
+  @media all and (max-width: 805px) {
+      width: 97%;
+      padding-bottom: 1.5em;
+    }
+
+  .description-column {
+    position: relative;
+    padding-right: 1em;
+    width: 48%;
+
+    @media all and (max-width: 805px) {
+      width: 100%;
+      padding-right: 0;
+    }
+
+    header {
+      padding: 2em 0;
+    }
+
+    article {
+      padding: 2em 0;
+      line-height: 1.8em;
+      border-top: $clr-border;
+      border-bottom: $clr-border;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 1.5em;
+      line-height: 1em;
+
+      li {
+        margin-bottom: 1.3em;
+      }
+    }
+
+    footer {
+      margin-top: 2em;
+    }
+  }
+
+  .post-list {
+    padding-top: 2em;
+    width:48%;
+    float: right;
+
+    @media all and (max-width: 805px) {
+      width: 95%;
+      float: left;
+    }
+
+    li {
+      margin-bottom: 3.5em;
+    }
+  }
+
+  .post-img {
+    width: 144px;
+    height: 92px;
+  }
+
+  .post {
+
+    .heading {
+      margin-left: 1em;
+
+      @media all and (max-width: 410px) {
+        font-size: 0.8em;
+        width: 50%
+      }
+    }
+
+    header a {
+      font-size: 13px;
+    }
+
+    aside {
+      margin-top: 0.5em;
+      font-size: 0.8em;
+    }
+
+    .time {
+      padding-right: 1em;
+    }
+
+    .comment {
+      padding-left: 1em;
+      border-left: 1px solid black;
+    }
+
+    article {
+      margin-top: 1em;
+      margin-left: 1em;
+      width: 66.38%;
+
+      @media all and (max-width: 990px){
+        width: 55%;
+      }
+      @media all and (max-width: 410px) {
+        width: 50%;
+      }
+    }
+  }
+}

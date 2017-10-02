@@ -1,0 +1,21 @@
+.logo {
+  display: block;
+  margin-top: 4.5em;
+  border-bottom: $clr-border;
+  max-height: 430px;
+
+  @media all and (max-width: 805px){
+    margin: 0;
+    border-top: $clr-border;
+  }
+
+  .logo-holder {
+    position: relative;
+    max-width: 920px;
+    margin: 0 auto;
+  }
+
+  img {
+    display: block;
+  }
+}

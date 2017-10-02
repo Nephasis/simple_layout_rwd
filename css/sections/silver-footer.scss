@@ -1,0 +1,61 @@
+.silver-footer {
+  position: relative;
+  padding: 4em 2% 0 2%;
+  top: -4px;
+  height: 190px;
+  background-color: #f8f8f8;
+  background-image: url('../img/bkgd13.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  .purchase {
+    position:relative;
+    float: left;
+    padding: 3.6%;
+    border-left: 3px solid $theme-clr;
+    border-right: $clr-border;
+    border-bottom: $clr-border;
+    border-top: $clr-border;
+    background-color: white;
+  }
+
+  header {
+    float: left;
+    margin-bottom: 0.7em;
+  }
+
+  article {
+    float: left;
+    padding-right: 0.5em;
+    letter-spacing: -0.5px;
+    font-size: 12px;
+  }
+
+  .button-theme-clr {
+    margin: 0;
+    float: right;
+
+    @media all and (max-width: 875px) {
+      display: none;
+    }
+  }
+
+  .mobile-btn {
+    display: none;
+
+    @media all and (max-width: 875px) {
+      display: inline-block;
+      margin-top: 3%;
+      width: 95%;
+    }
+
+    @media all and (max-width: 630px) {
+      width: 90%;
+    }
+
+    @media all and (max-width: 470px) {
+      width: 87%;
+    }
+  }
+}
